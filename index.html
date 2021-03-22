@@ -1,1 +1,123 @@
-<b> Hello this will be a website </b>
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<link rel="shortcut icon" href="../pictures/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../pictures/favicon.ico" type="image/x-icon">
+
+<title>Oliver Zeller Photography</title>
+
+<link rel="stylesheet" type="text/css" href="../CSS/Stylesheet.css" media="screen" />
+
+<script src="../Java scripts/Smooth Scroll.js"></script>   <!-- Smooth scroll script -->
+
+
+
+</head>
+
+
+
+
+
+
+
+<div class="image1" id="home"> 
+	
+<ul>
+  <li><a href="#">Home</a></li>
+  <li onclick="smoothScroll(document.getElementById('pbox1'))"><a href="#">Basic Information</a></li>
+  <li onclick="smoothScroll(document.getElementById('pbox2'))"><a href="#">My Work</a></li>
+  <li onclick="smoothScroll(document.getElementById('pbox3'))"><a href="#">Contact Me</a></li>
+  <!--<li onclick="smoothScroll(document.getElementById('pbox4'))"><a href="#">Stuff</a></li>   These two are not required right now
+   <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="Link 1.html">Link 1</a>
+      <a href="Link 2.html">Link 2</a>
+      <a href="Link 3.html">Link 3</a>
+   </div> 
+  </li> -->
+ <li onclick="Login()" style="float:right"> <a href="#">Redeem Code</a></li>
+</ul>
+
+
+<div class="heading headingtext"><p>Oliver Zeller Fotography</p></div>
+
+ 
+
+</div>	
+
+<div class="pbox" id="pbox1">
+<h1 class="pheading">A little bit about me</h1>
+<p class="ptext" style="padding-bottom:100px">
+"I personally see photography as a hobby that I use to escape the stress of everyday life. 
+I use my camera to capture moments that I would otherwise forget, moments which may have no importance to others- 
+but they’re mine so it makes no difference to me. There’s a certain sense of freedom connected to it, 
+not being bound by rules and limitations which others have set for you."
+</p>
+</div>		
+
+<div class="image2"></div>
+
+<div class="pbox" id="pbox2">
+<h1 class="pheading">My work</h1>
+<p class="ptext" style="padding-bottom:100px">
+For my Photography, I like to specialize on two main sections of my work. While I enjoy taking nature pictures I also specialise on studio work. On this website you´ll find a mixture of my work.
+</p>
+</div>	
+
+
+<div class="image3"></div>
+
+<div class="pbox" style="height:330px;line-height: 120px;padding-bottom:0px;" id="pbox3">
+<h1 class="pheading">Contact Me</h1>
+<p class="ptext" style="padding-bottom:0px">
+In case you have any questions or would simply like to get into contact with me, you can either send me an <a href="mailto:ozeller.eu@gmail.com" target="_top" style="font:bold;">email</a> or a message on my Facebook page
+</p>
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOZellerPhotography%2F&tabs=timeline&width=340&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="100" style="border:none;overflow:hidden;position:relative;padding-top:0;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>	
+
+
+<div class="image4"></div>
+
+<div>
+<ul style="background-color:#8B8B8B;bottom: 0;opacity:0.9">
+<li onclick="smoothScroll(document.getElementById('home'))" class="liEnd"><a href="#">Home</a></li>
+</ul>
+</div>
+
+
+</body>
+
+
+
+<!-- Login Box Beginning -->
+
+<script src="../Java scripts/Login Box.js"></script> <!-- Login Box script -->
+
+
+<div class="login-box-background" id="Login-Background">
+
+<div class="login-box animate-zoom" id="Login">
+<h2 class="login-text">Code Login</h2>
+<p class="login-text">After getting your pictures taken you may recieve a code via email or other services, which can be typed in below to gain access to your pictures.</p>
+<b><p class="login-text2">Redeem Code:</p></b>
+
+<div class="center" OnKeyPress=" checkSubmit(event)"> <input id='password' type='password'  />
+ <a href="#" onclick="javascript: validatePass()" ><button class="buttonL">Enter</button> </a>
+</div>
+
+<div class="close">
+  <span onclick="Loginoff()" class="close" title="Close Login">&times;</span>
+</div>
+
+</div>
+</div>
+
+<!-- Login Box Ending -->
+
+
+
+
+</html>
